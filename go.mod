@@ -1,4 +1,4 @@
-module helloworld_proto
+module github.com/difaagh/helloworld_proto
 
 go 1.19
 
