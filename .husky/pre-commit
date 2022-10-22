@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+protoc \
+--proto_path=. \
+--go_out=./protos \
+--go_opt=module=github.com/difaagh/helloworld_proto \
+--go-grpc_out=./protos \
+--go-grpc_opt=module=github.com/difaagh/helloworld_proto \
+./protos/*/*.proto
