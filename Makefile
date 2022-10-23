@@ -5,7 +5,7 @@ proto_go:
 	--go_opt=module="github.com/difaagh/helloworld_proto" \
 	--go-grpc_out="./stub/go" \
 	--go-grpc_opt=module="github.com/difaagh/helloworld_proto" \
-	./*/*.proto
+	./protos/*/*.proto
 
 proto_js:
 	protoc \
@@ -13,13 +13,13 @@ proto_js:
 	--js_out=import_style=commonjs,binary:"./stub/nodejs" \
 	--grpc_out="./stub/nodejs" \
 	--plugin=protoc-gen-grpc="./node_modules/.bin/grpc_tools_node_protoc_plugin" \
-	./*/*.proto
+	./protos/*/*.proto
 
 proto_ts:
 	protoc \
 	--proto_path="." \
 	--ts_out="./stub/nodejs" \
 	--plugin=protoc-gen-ts="./node_modules/.bin/protoc-gen-ts" \
-	./*/*.proto
+	./protos/*/*.proto
 
-proto: proto_go proto_js proto_ts 
+proto: proto_go proto_js proto_ts
