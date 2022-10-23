@@ -1,7 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('grpc');
 var helloworld_pb = require('./helloworld_pb.js');
 
 function serialize_helloworld_HelloReply(arg) {
@@ -27,7 +26,7 @@ function deserialize_helloworld_HelloRequest(buffer_arg) {
 }
 
 
-var GreeterService = exports.GreeterService = {
+var GreeterService = exports['helloworld.Greeter'] = {
   sayHello: {
     path: '/helloworld.Greeter/SayHello',
     requestStream: false,
@@ -41,4 +40,3 @@ var GreeterService = exports.GreeterService = {
   },
 };
 
-exports.GreeterClient = grpc.makeGenericClientConstructor(GreeterService);
