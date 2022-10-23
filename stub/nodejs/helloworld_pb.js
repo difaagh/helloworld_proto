@@ -1,4 +1,4 @@
-// source: protos/helloworld/helloworld.proto
+// source: helloworld.proto
 /**
  * @fileoverview
  * @enhanceable

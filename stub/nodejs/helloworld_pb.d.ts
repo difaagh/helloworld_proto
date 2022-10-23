@@ -1,5 +1,5 @@
 // package: helloworld
-// file: protos/helloworld/helloworld.proto
+// file: helloworld.proto
 
 /* tslint:disable */
 /* eslint-disable */
