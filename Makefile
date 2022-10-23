@@ -12,7 +12,7 @@ proto_go:
 	${PROTO_PATH}
 
 proto_nodejs:
-	--protoc \
+	--${NODE_MODULES}/.bin/grpc_tools_node_protoc \
 	--proto_path="." \
 	--plugin=protoc-gen-grpc="${NODE_MODULES}/.bin/grpc_tools_node_protoc_plugin" \
 	--plugin=protoc-gen-ts="${NODE_MODULES}/.bin/protoc-gen-ts" \
