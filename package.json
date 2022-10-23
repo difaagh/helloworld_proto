@@ -1,0 +1,19 @@
+{
+  "name": "helloworld_proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-difaagh:difaagh/helloworld_proto.git"
+  },
+  "author": "difaagh",
+  "license": "ISC",
+  "dependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.2",
+    "grpc-tools": "^1.11.3"
+  }
+}
