@@ -17,7 +17,7 @@ proto_nodejs:
 	--plugin=protoc-gen-grpc="${NODE_MODULES}/.bin/grpc_tools_node_protoc_plugin" \
 	--plugin=protoc-gen-ts="${NODE_MODULES}/.bin/protoc-gen-ts" \
 	--js_out=import_style=commonjs,binary:"${OUT_DIR}/nodejs" \
-	--grpc_out=generate_package_definition:"${OUT_DIR}/nodejs" \
+	--grpc_out="grpc_js:${OUT_DIR}/nodejs" \
 	--ts_out="service=grpc-node,mode=grpc-js:${OUT_DIR}/nodejs" \
 	${PROTO_PATH}
 
